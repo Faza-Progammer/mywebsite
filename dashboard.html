@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fazlur Rahman</title>
+    <link rel="icon" href="Progammer.jpg">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="profil">
+    <img src="Progammer.jpg" alt="">    
+    <h1 id="fazlurrahman">Fazlur Rahman</h1>
+    <h4 style="font-size: 20px;"> UI/UX Designer & Web Development</h4>
+    </div>
+
+    <!-- Menu navigasi -->
+    <ul class="navigasi">
+        <li><a id="follow" href="#kontak">Ikuti Sosial Media Saya</a></li>
+        <li><a id="tentang-link" href="#tentang">Tentang</a></li>
+        <li><a id="kontak-link" href="#kontak">Kontak</a></li>
+        <li><a href="#keahlian">Keahlian</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+    </ul>
+    <script>
+        document.getElementById("tentang-link").addEventListener("click", function(event) {
+            event.preventDefault(); // Mencegah scroll ke #tentang
+            window.location.href = "tentang.html"; // Pindah ke halaman1.html
+        });
+
+        document.getElementById("kontak-link").addEventListener("click", function(event) {
+            event.preventDefault(); // Mencegah scroll ke #tentang
+            window.location.href = "kontak.html"; // Pindah ke halaman1.html
+        });
+    </script>
+</body>
+</html>

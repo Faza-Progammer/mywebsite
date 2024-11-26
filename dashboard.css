@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Horizontal center */
+    align-items: center;    /* Vertical center */
+    height: 100vh;          /* Full height of the viewport */
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  body::before {
+    content: ''; /* Dibutuhkan untuk pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; /* Warna overlay */
+    opacity: 0.3; /* Transparansi */
+    z-index: 1; /* Pastikan berada di atas gambar */
+  }
+
+  .profil {
+    font-family: monospace;
+    font-weight: bolder;
+    color: #f0f0f0;
+    text-align: center;
+    justify-content: center;
+    z-index: 5;
+  }
+
+  #fazlurrahman {
+    position: relative;
+    font-family: sans-serif;
+    font-weight: bolder;
+    right: 0px;
+    font-size: 40px;
+  }
+
+  img {
+    position: relative;
+    right: 5px;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid white;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .navigasi {
+    background-color: #23b8f300; /* Warna latar belakang */
+    justify-content: center; /* Memusatkan elemen di tengah */
+    list-style: none; /* Menghilangkan bullet points */
+    margin: 0; /* Menghapus margin default */
+  }
+
+  .navigasi li {
+    margin: 0 15px;
+    font-family: sans-serif; /* Spasi antar menu */
+  }
+
+  .navigasi a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: white; /* Warna teks */
+    font-size: 18px; /* Ukuran font */
+    font-weight: bold; /* Membuat teks tebal */
+    transition: color 0.3s; /* Animasi efek hover */
+  }
+
+  .navigasi a:hover {
+    color: #0099cc; /* Warna saat mouse di atas */
+  }
+
+  .navigasi {
+    position: fixed; /* Membuat navigasi tetap di atas meskipun halaman di-scroll */
+    top: 20px; /* Menempel di bagian atas halaman */
+    left: 0; /* Menempel di sisi kiri */
+    width: 100%; /* Lebar navigasi sepanjang layar */
+    padding: 10px 0; /* Padding vertikal */
+    display: flex; /* Menjadikan elemen flex */
+    justify-content: right; /* Memusatkan elemen di tengah */
+    list-style: none; /* Menghilangkan bullet points */
+    margin: 0; /* Menghapus margin default */
+    z-index: 1000; /* Agar berada di atas elemen lainnya */
+  }
+
+  #follow {
+    position: relative;
+    right: 700px;
+    border-radius: 10px;
+    z-index: 20;
+    background-color:rgba(0, 0, 0, 0.486);
+    color: #0099cc;
+    outline: 2px solid #0099cc;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+
+  #follow:hover {
+    outline: 2px solid #0079a1;
+    color: #0079a1;
+  }

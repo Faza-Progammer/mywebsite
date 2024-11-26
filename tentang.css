@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Menyembunyikan scrollbar */ 
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+h1 {
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+img {
+    width: 250px;
+    border-radius: 20px;
+    outline: 1px solid white;
+    margin-right: 60px;
+    margin-left: 10px;
+   
+}
+
+.profil {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 15px;
+   background-color: transparent;
+   backdrop-filter: blur(10px);
+   outline: 1px solid white;
+   border-radius: 20px;
+   padding: 20px;
+   position: relative;
+   bottom: 100px;
+   margin: 200px;
+}
+
+.back-button {
+    display: inline-block;
+    position: relative;
+    bottom: 880px;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #1990e6; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+.back-button:hover {
+    background-color: #1785d4; /* Warna hover */
+}
